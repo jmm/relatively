@@ -21,7 +21,7 @@ Create an initialization script that you require prior to your normal app entry 
 
 ```js
 // init.js
-require("customize-require")({
+require("relatively")({
   mods: [
     {
       type: "dir",
