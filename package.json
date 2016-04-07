@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "customize-require",
+  "name": "relatively",
   "version": "0.1.0",
-  "main": "./customize-require.js",
+  "main": "./relatively.js",
   "license": "MIT",
   "author": "Jesse McCarthy (http://software.jessemccarthy.net/)",
   "files": [
     "package.json",
     "LICENSE",
     "README.md",
-    "customize-require.js"
+    "relatively.js"
   ]
 }
