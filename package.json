@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "relatively",
   "version": "0.1.0",
   "main": "./relatively.js",
