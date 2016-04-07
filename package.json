@@ -4,6 +4,11 @@
   "version": "0.1.0",
   "main": "./customize-require.js",
   "license": "MIT",
-  "author": "Jesse McCarthy (http://software.jessemccarthy.net/)"
-
+  "author": "Jesse McCarthy (http://software.jessemccarthy.net/)",
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "customize-require.js"
+  ]
 }
