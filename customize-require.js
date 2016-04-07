@@ -37,7 +37,9 @@ function customize_require (opts) {
   }
 
   require.extensions[".js"] = function (module, pathname) {
-    module.require = make_custom_require(module.require);
+    if (!opts.customize || opts.customize(module, pathname)) {
+      module.require = make_custom_require(module.require);
+    }
     return handler.call(this, module, pathname);
   };
 }
