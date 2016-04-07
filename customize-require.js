@@ -5,12 +5,11 @@ var patterns = {
 };
 
 function customize_require (opts) {
-  if (!(Array.isArray(opts.cfg.mods) && opts.cfg.mods.length)) return;
+  if (!(Array.isArray(opts.mods) && opts.mods.length)) return;
 
-  var cfg = opts.cfg;
   var mods = {};
 
-  opts.cfg.mods.forEach(function (mod) {
+  opts.mods.forEach(function (mod) {
     var type = mods[mod.type] = mods[mod.type] || {};
     type[mod.from] = mod.to;
   });
