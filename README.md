@@ -1,4 +1,4 @@
-A WIP experimental approach to the Node `require()` `../../../../../../..` problem. See for example [Better local require() paths for Node.js](https://gist.github.com/branneman/8048520). Allows `require()`ing paths that are relative to the application, or whatever you configure.
+A WIP experimental approach to solving the Node `require()` `../../../../../../..` problem. See for example [Better local require() paths for Node.js](https://gist.github.com/branneman/8048520). Allows `require()`ing paths that are relative to the application root, or whatever you configure.
 
 # Use case
 
@@ -22,14 +22,12 @@ Create an initialization script that you require prior to your normal app entry 
 ```js
 // init.js
 require("customize-require")({
-  cfg: {
-    mods: {
-      dir: {
-        // Makes `require("app/whatever")` behave like
-        // `require("/path/to/some/dir/whatever")`, from anywhere in your
-        // dependency tree.
-        "app": "/path/to/some/dir",
-      }
+  mods: {
+    dir: {
+      // Makes `require("app/whatever")` behave like
+      // `require("/path/to/some/dir/whatever")`, from anywhere in your
+      // dependency tree.
+      "app": "/path/to/some/dir",
     }
   }
 });
