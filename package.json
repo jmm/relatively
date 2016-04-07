@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "customize-require",
+  "version": "0.1.0",
+  "main": "./customize-require.js",
+  "license": "MIT",
+  "author": "Jesse McCarthy (http://software.jessemccarthy.net/)"
+
+}
