@@ -22,14 +22,16 @@ Create an initialization script that you require prior to your normal app entry 
 ```js
 // init.js
 require("customize-require")({
-  mods: {
-    dir: {
+  mods: [
+    {
+      type: "dir",
       // Makes `require("app/whatever")` behave like
       // `require("/path/to/some/dir/whatever")`, from anywhere in your
       // dependency tree.
-      "app": "/path/to/some/dir",
-    }
-  }
+      from: "app",
+      to: "/path/to/some/dir",
+    },
+  ]
 });
 ```
 
