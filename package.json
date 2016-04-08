@@ -9,5 +9,10 @@
     "LICENSE",
     "README.md",
     "relatively.js"
+  ],
+  "description": "For the Node `require('../../../../../../..')` problem.",
+  "keywords": [
+    "require",
+    "relative path"
   ]
 }
