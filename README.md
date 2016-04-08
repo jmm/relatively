@@ -1,5 +1,7 @@
 A WIP experimental approach to solving the Node `require()` `../../../../../../..` problem. See for example [Better local require() paths for Node.js](https://gist.github.com/branneman/8048520). Allows `require()`ing paths that are relative to the application root, or whatever you configure.
 
+[Demo](https://github.com/jmm/relatively-demo)
+
 # Use case
 
 ```js
