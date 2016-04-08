@@ -35,4 +35,10 @@ require("relatively")({
 });
 ```
 
+```js
+// entry.js
+// Loads /path/to/some/dir/x/y/z
+require("app/x/y/z");
+```
+
 `node -r ./init.js entry.js`
